@@ -22,7 +22,8 @@ class Solution {
                 }
             }
             if (!canSolve) {
-                // If after checking all the windows and still find no solvable window, then the sequence is not possible to stamp. Early return, otherwise infinite loop.
+                // If after checking all the windows and still find no solvable window, 
+                // then the sequence is not possible to stamp. Early return, otherwise infinite loop.
                 return new int[0];
             }
         }
