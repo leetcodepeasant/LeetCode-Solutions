@@ -27,7 +27,7 @@ class Solution {
                 return new int[0];
             }
         }
-        // actual stamping sequence the is reverse of ans
+        // Actual stamping sequence is the reverse of ans.
         int[] ansArray = new int[ans.size()];
         for (int i = 0; i < ans.size(); i++) {
             ansArray[i] = ans.get(ans.size() - i - 1);
@@ -36,7 +36,7 @@ class Solution {
     }
     
     private boolean canSolveWindow(char[] S, char[] T, int p) {
-        // Check if p-th window of T can be replaced with all ?.
+        // Check if the p-th window of T can be replaced with all ?.
         for (int i = 0; i < S.length; i++) {
             if (T[i + p] != '?' && T[i + p] != S[i]) {
                 return false;
@@ -46,7 +46,7 @@ class Solution {
     }
     
     private int solveWindow(char[] S, char[] T, int p, int cnt) {
-        // Replace p-th window of T with all ? and return the total number of ?.
+        // Replace the p-th window of T with all ? and return the total number of ? in T now.
         for (int i = 0; i < S.length; i++) {
             if (T[i + p] != '?') {
                 T[i + p] = '?';
